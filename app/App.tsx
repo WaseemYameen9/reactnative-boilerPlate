@@ -10,12 +10,14 @@ import {
   View,
 } from 'react-native';
 
+import AppNavigator from './navigators/AppStackNavigator';
+
 
 
 function App(): React.JSX.Element {
 
   return (
-    <Text>Hi</Text>
+    <AppNavigator/>
   );
 }
 
