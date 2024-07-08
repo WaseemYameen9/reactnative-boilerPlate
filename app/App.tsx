@@ -33,8 +33,8 @@ function App(): React.JSX.Element {
     <View style={{flexDirection:'column',justifyContent:'space-around'}}>
 
     <Button onPress={toggleTheme} title={`Switch to ${theme.color === '#e9e9e9' ? 'Light' : 'Dark'} Mode`} color={theme.linkColor} />
-    <Button title={"English"} onPress={()=>changeLanguage('fr')}></Button>
-    <Button title={"French"} onPress={()=>changeLanguage('en')}></Button>
+    <Button title={"English"} onPress={()=>changeLanguage('en')}></Button>
+    <Button title={"French"} onPress={()=>changeLanguage('fr')}></Button>
     </View>
   </View>
   );
