@@ -5,6 +5,7 @@ import {name as appName} from './app.json';
 import { Provider } from 'react-redux';
 import store from './app/store/store';
 
+import './app/localization/languages/i18n.config'
 
 const AppRedux = () => (
     <Provider store={store}>
