@@ -1,79 +1,89 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# React Native App Template
 
-# Getting Started
+This repository contains a React Native template that includes various functionalities like dark mode and multilingual support. Follow the instructions below to set up and run the project.
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+## Libraries Installed
 
-## Step 1: Start the Metro Server
+The following libraries are included in this template:
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+### Navigation
+- `@react-navigation/bottom-tabs`
+- `@react-navigation/native`
+- `@react-navigation/native-stack`
+- `react-native-screens`
 
-To start Metro, run the following command from the _root_ of your React Native project:
+### State Management
+- `@reduxjs/toolkit`
+- `react-redux`
+- `redux`
 
-```bash
-# using npm
-npm start
+### Network Requests
+- `axios`
 
-# OR using Yarn
-yarn start
-```
+### Internationalization
+- `i18next`
+- `react-i18next`
+- `react-native-localize`
 
-## Step 2: Start your Application
+### UI Components
+- `react-native-paper`
+- `react-native-vector-icons`
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+### Utilities
+- `react-native-safe-area-context`
 
-### For Android.
+## Implemented Functionalities
 
-```bash
-# using npm
-npm run android
+- **Dark Mode**: The template supports dark mode, allowing users to switch between light and dark themes.
+- **Multilingual Support**: The template supports multiple languages, making it easier to internationalize the app.
 
-# OR using Yarn
-yarn android
-```
+## Setup Instructions
 
-### For iOS
+1. **Clone the repository**:
+    ```sh
+    git clone <repository_url>
+    ```
 
-```bash
-# using npm
-npm run ios
+2. **Navigate to the project directory**:
+    ```sh
+    cd template
+    ```
 
-# OR using Yarn
-yarn ios
-```
+3. **Remove the existing `.git` folder**:
+    ```sh
+    rm -rf .git
+    ```
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+4. **Rename the app**:
+    ```sh
+    npx react-native-rename <new_app_name>
+    ```
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+5. **Install dependencies**:
+    ```sh
+    npm install
+    ```
 
-## Step 3: Modifying your App
+6. **Run the app on Android**:
+    ```sh
+    npx react-native run-android
+    ```
 
-Now that you have successfully run the app, let's modify it.
+## Scripts
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+- `npm run android`: Run the app on an Android device/emulator.
+- `npm run ios`: Run the app on an iOS device/simulator.
+- `npm run lint`: Lint the project using ESLint.
+- `npm run start`: Start the React Native bundler.
+- `npm run test`: Run the tests using Jest.
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+## Additional Information
 
-## Congratulations! :tada:
+Ensure you have the following prerequisites installed on your machine:
 
-You've successfully run and modified your React Native App. :partying_face:
+- Node.js (>=18)
+- React Native CLI
+- Android Studio (for Android development)
+- Xcode (for iOS development)
 
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+For more information on setting up your development environment, refer to the official [React Native documentation](https://reactnative.dev/docs/environment-setup).
