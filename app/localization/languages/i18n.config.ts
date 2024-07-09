@@ -1,7 +1,8 @@
 import i18next from "i18next";
-import { initReactI18next } from "react-i18next";
+import { initReactI18next, Translation } from "react-i18next";
 import { en} from "./languages";
 import { fr } from "./languages";
+import {urdu} from "./languages"
 
 const resources ={
     en:{
@@ -9,6 +10,9 @@ const resources ={
     },
     fr:{
         translation:fr
+    },
+    urdu:{
+        translation:urdu
     }
 }
 

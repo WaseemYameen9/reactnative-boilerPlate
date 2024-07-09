@@ -1,4 +1,11 @@
 {
-    "title":"Hello !"
+    "title":"Hello !",
+    "Inputplaceholder":"Enter amount in Rupees",
+    "ConvertUSD":"Convert to USD",
+    "ConvertSAR":"Convert to SAR",
+    "Converted":"Converted Amount"
+    
+  
+
 
 }
